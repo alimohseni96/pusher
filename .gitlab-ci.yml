@@ -1,23 +1,17 @@
 variables:
   SOURCE_DIRECTORY:
     description: "Select the source directory"
-    value: "D://Kasra//Portal//backportal//Microservices//Portal//PortalExtend_dev" # Default value (can be modified)
+    value: "home/ali" # Default value (can be modified)
     options:
-      - "D://Kasra//Portal//backportal//Microservices//Portal//PortalExtend_dev"
-      - "D://Kasra//Portal//backportal//Microservices//Portal//TaxPayers_dev"
-      - "D://Kasra//Portal//frontportal//apps//PortalExtend_dev"
-      - "D://Kasra//Portal//frontportal//apps//FiscalInformationOriAddition_dev"
-      - "D://Kasra//Portal//frontportal//apps//TaxPayers_dev"
+      - "D://ali//" #--> windows format 
+      - "/home/ali" #--> linux format
 
   GIT_REPO_URL:
     description: "Select the Git repository URL"
-    value: "http://192.168.91.241/kasra/portals/data-gateway/fiscalinformationoriaddition_dev.git" # Default value (can be modified)
+    value: "https://github.....git" # Default value (can be modified)
     options:
-      - "http://192.168.91.241/kasra/portals/data-gateway/fiscalinformationoriaddition_dev.git"
-      - "http://192.168.91.241/kasra/portals/data-gateway/portalextend_dev.git"
-      - "http://192.168.91.241/kasra/portals/tax-payers/apps/PortalExtend_dev.git"
-      - "http://192.168.91.241/kasra/portals/tax-payers/apps/Taxpayers_dev.git"
-      - "http://192.168.91.241/kasra/portals/tax-payers/microservices/TaxPayers_dev.git"
+      - "https://github......git" # Enter dest repo
+
 
   COMMIT_MESSAGE:
     description: "The commit message for the Git push"
